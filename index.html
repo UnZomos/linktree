@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Linked</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <style type="text/css" media="all">
+            body {
+                font-family: "MuseoModerno", serif;
+                background-image: url("/robert-lukeman-_RBcxo9AU-U-unsplash.jpg");
+                background-position: center;
+                background-size: cover;
+                min-height: 100vh;
+            }
+            section {
+                position: absolute;
+                inset: 0;
+                display: grid;
+                place-items: center;
+                overflow-y: auto;
+            }
+            section main {
+                padding: 80px 20px;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                width: 100%;
+                max-width: 600px;
+            }
+            section main img {
+                width: 20%;
+                border-radius: 50px;
+                margin: 0 auto;
+                box-shadow: 0 0 10px rgb(225, 225, 225, 0.5);
+            }
+            section main h2,
+            section main p {
+                color: white;
+                text-shadow: 2px 2px 4px rgba(43, 43, 43, 0.538);
+            }
+            section main .social {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            section main .social a {
+                border: 2px solid white;
+                padding: 15px 0;
+                margin: 0 10px;
+                text-decoration: none;
+                color: white;
+                border-radius: 10px;
+                font-weight: bold;
+                transition: 0.3s;
+            }
+            section main .social a:hover {
+                background-color: white;
+                color: black;
+            }
+            footer {
+              color: white;
+        </style>
+    </head>
+    <body>
+        <section>
+            <main>
+                <img src="parhan.png" alt="GAMBAR ORANG" />
+                <h2 class="title">Parhan F</h2>
+                <p>My social media</p>
+                <div class="social">
+                    <a href="https://www.instagram.com/w2patrick"
+                        ><i class="fa-brands fa-square-instagram"></i>
+                        Instagram</a
+                    >
+                    <a href="https://www.facebook.com/share/18qNHWLwJo/"
+                        ><i class="fa-brands fa-square-facebook"></i>
+                        Facebook</a
+                    >
+                    <a href="https://www.linkedin.com/in/farhan-g-140160307"><i class="fa-brands fa-linkedin"></i> Linked</a>
+                    <a
+                        href="https://www.discordapp.com/users/125344457798205450"
+                        ><i class="fa-brands fa-discord"></i> Discord</a
+                    >
+                    <a href="https://github.com/UnZomos"
+                        ><i class="fa-brands fa-square-github"></i> Github</a
+                    >
+                </div>
+            </main>
+            <footer><p>Matab bsoku</p></footer>
+        </section>
+        <script type="text/javascript" charset="utf-8">
+            const title = document.querySelector("title");
+            const name = document.querySelector(".title");
+            const footer = document.querySelector("footer");
+            const footerA = document.createElement("a");
+            const textFooterA = document.createTextNode("UnZomos");
+            footerA.appendChild(textFooterA);
+            footerA.setAttribute("href", "https://github.com/UnZomos");
+            footerA.style.color = "white";
+            footerA.style.textDecoration = "none";
+            footerA.style.fontWeight = "bold";
+            title.textContent = name.textContent + " - Linktree";
+            footer.innerHTML = footer.textContent + " | © 2025 ";
+            footer.appendChild(footerA);
+        </script>
+    </body>
+</html>
